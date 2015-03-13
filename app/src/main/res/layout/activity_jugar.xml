@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.nicajaowk.javi.juegopucherin.Jugar"
+    android:id="@+id/activity_jugar"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="506dp"
+            android:id="@+id/imageView3"
+            android:background="@drawable/tablero" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIRAR DADOS"
+            android:id="@+id/buttonTirar"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="JUGADOR"
+            android:id="@+id/jugadorText"
+            android:layout_weight="0.30"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="PUNTUACION"
+            android:id="@+id/puntuacionText"
+            android:layout_weight="0.30"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

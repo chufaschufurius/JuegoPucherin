@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nicajaowk.javi.juegopucherin.Puntuacion"
+    android:id="@+id/layoutJuego"
+    android:background="@color/accent_material_light">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MEJOR PUNTUACION"
+        android:id="@+id/buttonPuntuacion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSTRUCCIONES"
+        android:id="@+id/buttonInstrucciones"
+        android:layout_above="@+id/buttonPuntuacion"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JUGAR"
+        android:id="@+id/buttonJugar"
+        android:layout_above="@+id/buttonInstrucciones"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonPuntuacion"
+        android:layout_alignEnd="@+id/buttonInstrucciones"
+        android:layout_above="@+id/buttonJugar" />
+
+</RelativeLayout>
